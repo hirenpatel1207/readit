@@ -1,0 +1,52 @@
+{% load static %}
+<! doctype html>
+
+<html>
+	<head>
+		<title>Read it</title>
+		<meta charset="utf-8">
+		<meta name= "description"content="my grt book">
+        <meta name= "viewport"content="width=device-width,intial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+		<body>
+		   <div class="container">
+				<header>
+                <img src="{% static 'img/logo.png' %}" alt="Readit!" class="logo" />
+					<div class="welcome">
+					{% if request.user.is_authenticated %}
+                        <p>help {{ request.user.username|title }}, you last logged in at {{ request.user.last_login|date:"D d M Y"}}. <a href="{% url 'logout' %}">Logout</a> </p>
+					{% else %}
+			    <p> Welcome guest! <a href="{% url 'login' %}">Login</a> </p>
+					{% endif %}
+					</div>
+				</header>
+				
+				<nav>
+					<a href="{% url 'books' %}"> Books </a>
+					<a href="{% url 'authors' %}"> Authors </a>
+					{% if request.user.is_authenticated %}
+                        <a href="{% url 'review-books' %}"> Review Books </a>
+                    {%  endif %}
+				</nav>
+				
+				<main>
+				{% block content%}
+				
+				
+				
+				
+				{% endblock%}
+				</main>
+				
+				</footer>
+					<p> My awsome review website </p>
+				</footer>
+           </div>
+			</main>
+		</body>
+		
+</html> 

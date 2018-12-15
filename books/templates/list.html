@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block content %}
+			  <h1> {{ books.count|apnumber|title }} books{{books.countpluralize }} </h1>
+			  
+			  {% for book in books %}
+			      {% include "book-detail.html" %}
+			   {% endfor %}
+			
+			
+{% endblock %}

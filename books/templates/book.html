@@ -1,0 +1,12 @@
+{% extends "base.html" %}        {# the common header and footer block #}
+{% load humanize %}
+
+{% block content %}
+			{% if book.review %}
+
+                {% include "book-detail.html" %}
+
+
+			{% endif %}
+			
+{% endblock %}

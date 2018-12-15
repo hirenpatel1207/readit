@@ -1,0 +1,18 @@
+{# to show individual book detail #}
+<div class= "book">
+					
+					<h3> <a href="{% url 'book-detail' book.pk %}"> {{book.title }} </a></h3>
+
+					<p> {% for author in book.authors.all %} By <a href="{% url 'author-detail' author.pk %}"> {{author.name }} </a> {%endfor %} </p>
+					{% if book.is_favourite %} <p class = "highlight"> Fovourite {% endif %}</p>
+					<p> {{ book.review|linebreaks }} </p>
+
+                      <p class="meta">
+                          Reviewed on <strong>{{ book.date_reviewed|date:"D d M Y" }}</strong>
+                          {% if book.reviewed_by %}
+                              by <strong>{{ book.reviewed_by.get_full_name|default:book.reviewed_by.username }}</strong>
+                          {% endif %}
+                      </p>
+					
+</div>
+
