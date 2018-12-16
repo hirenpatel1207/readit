@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4514b8d-4bfc-4049-9a4c-1be07e53f9d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/requirements/staging.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/tests/test_forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,20 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/books/tests/test_forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="171">
+              <caret line="34" column="99" selection-start-line="34" selection-start-column="99" selection-end-line="34" selection-end-column="99" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readit/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+            <state relative-caret-position="1555">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -182,15 +185,15 @@
         <option value="$PROJECT_DIR$/books/models.py" />
         <option value="$PROJECT_DIR$/books/tests/test_models.py" />
         <option value="$PROJECT_DIR$/books/tests/test_views.py" />
-        <option value="$PROJECT_DIR$/books/tests/test_forms.py" />
         <option value="$PROJECT_DIR$/books/factories.py" />
         <option value="$PROJECT_DIR$/readit/settings.py" />
+        <option value="$PROJECT_DIR$/books/tests/test_forms.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="690" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="557" />
+    <option name="y" value="-13" />
     <option name="width" value="1260" />
     <option name="height" value="1030" />
   </component>
@@ -367,18 +370,18 @@
       <workItem from="1544346326999" duration="11592000" />
       <workItem from="1544373036362" duration="13448000" />
       <workItem from="1544906175673" duration="4522000" />
-      <workItem from="1544969654033" duration="2685000" />
+      <workItem from="1544969654033" duration="5496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53840000" />
+    <option name="totallyTimeSpent" value="56651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="552" y="1" width="1008" height="824" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18037975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -392,7 +395,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38439307" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37677053" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32796487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -570,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books/tests/test_forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -609,8 +605,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readit/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        <state relative-caret-position="1555">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/tests/test_forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="34" column="99" selection-start-line="34" selection-start-column="99" selection-end-line="34" selection-end-column="99" />
         </state>
       </provider>
     </entry>

@@ -16,8 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # obtaining Django_mode variable so as to set debug mode
-DJANGO_MODE = os.getenv('DJANGO_MODE', "Production").lower()
-DJANGO_MODE = DJANGO_MODE.replace('"', '')
+DJANGO_MODE = os.getenv('DJANGO_MODE', "Production").lower().replace("'", '')
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -95,6 +95,7 @@ WSGI_APPLICATION = 'readit.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
 if DJANGO_MODE == 'local':
     DATABASES = {
         'default': {
@@ -102,6 +103,19 @@ if DJANGO_MODE == 'local':
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+elif DJANGO_MODE == 'staging':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.getenv('DB_NAME'),
+            'USER': os.getenv('DB_USER'),
+            'PASSWORD': os.getenv('DB_PASSWORD'),
+            'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+            'PORT': os.getenv('DB_PORT', '5432'),
+        }
+    }
+
+
 
 
 # Password validation
