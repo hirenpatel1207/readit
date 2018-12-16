@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readit/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1028">
-              <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+            <state relative-caret-position="-434">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -181,7 +181,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="670" />
-    <option name="y" value="62" />
+    <option name="y" value="1" />
     <option name="width" value="1260" />
     <option name="height" value="1030" />
   </component>
@@ -358,15 +358,16 @@
       <workItem from="1544346326999" duration="11592000" />
       <workItem from="1544373036362" duration="13448000" />
       <workItem from="1544906175673" duration="4522000" />
-      <workItem from="1544969654033" duration="6791000" />
+      <workItem from="1544969654033" duration="7319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57946000" />
+    <option name="totallyTimeSpent" value="58474000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="536" y="50" width="1008" height="824" extended-state="0" />
+    <frame x="536" y="1" width="1008" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18037975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -599,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readit/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1028">
-          <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+        <state relative-caret-position="-434">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
         </state>
       </provider>
     </entry>
