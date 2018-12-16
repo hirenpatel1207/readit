@@ -15,19 +15,30 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# obtaining Django_mode variable so as to set debug mode
+DJANGO_MODE = os.getenv('DJANGO_MODE', "Production").lower()
+DJANGO_MODE = DJANGO_MODE.replace('"', '')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'iz76rq_9^919dx!a1(scnt5!y&3_=!rc1%u3zxo^vnj#bqy(@9'
+# SECRET_KEY = 'iz76rq_9^919dx!a1(scnt5!y&3_=!rc1%u3zxo^vnj#bqy(@9'
+# GETTING SECRET KEY from os
+
+
+SECRET_KEY = os.getenv('SECRET_KEY').replace("'", '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if DJANGO_MODE == 'local':
+
+    DEBUG = True
+else:
+    DEBUG = False
 
 
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').replace("'", '')
 
 
 # Application definition
@@ -40,9 +51,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'debug_toolbar',            # a debug toolbar ap
     'books',                    # books app developed by us
 ]
+
+if DJANGO_MODE == 'local':
+    INSTALLED_APPS += (
+        'debug_toolbar',  # a debug toolbar app
+    )
 
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',          # debug toolbar middleware
@@ -80,13 +95,13 @@ WSGI_APPLICATION = 'readit.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if DJANGO_MODE == 'local':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
 
 
 # Password validation
