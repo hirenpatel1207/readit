@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4514b8d-4bfc-4049-9a4c-1be07e53f9d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/readit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readit/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -375,12 +371,12 @@
       <workItem from="1544346326999" duration="11592000" />
       <workItem from="1544373036362" duration="13448000" />
       <workItem from="1544906175673" duration="4522000" />
-      <workItem from="1544969654033" duration="8506000" />
+      <workItem from="1544969654033" duration="9755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59661000" />
+    <option name="totallyTimeSpent" value="60910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="648" y="46" width="1008" height="824" extended-state="0" />
