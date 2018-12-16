@@ -1,0 +1,11 @@
+-r base.txt
+
+
+python-dateutil==2.7.5
+pytz==2018.7
+six==1.11.0
+
+text-unidecode==1.2
+psycopg2==2.7.1
+uWSGI==2.0.7
+dj-database-url==0.3.0

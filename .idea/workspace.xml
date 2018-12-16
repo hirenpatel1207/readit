@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4514b8d-4bfc-4049-9a4c-1be07e53f9d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readit/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,11 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readit/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-434">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state relative-caret-position="213">
+              <caret line="161" column="38" selection-start-line="161" selection-start-column="38" selection-end-line="161" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readit/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="e#222#231#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,14 +187,15 @@
         <option value="$PROJECT_DIR$/books/tests/test_models.py" />
         <option value="$PROJECT_DIR$/books/tests/test_views.py" />
         <option value="$PROJECT_DIR$/books/factories.py" />
-        <option value="$PROJECT_DIR$/readit/settings.py" />
         <option value="$PROJECT_DIR$/books/tests/test_forms.py" />
+        <option value="$PROJECT_DIR$/readit/settings.py" />
+        <option value="$PROJECT_DIR$/readit/wsgi.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="670" />
-    <option name="y" value="1" />
+    <option name="x" value="810" />
+    <option name="y" value="57" />
     <option name="width" value="1260" />
     <option name="height" value="1030" />
   </component>
@@ -358,18 +372,18 @@
       <workItem from="1544346326999" duration="11592000" />
       <workItem from="1544373036362" duration="13448000" />
       <workItem from="1544906175673" duration="4522000" />
-      <workItem from="1544969654033" duration="7319000" />
+      <workItem from="1544969654033" duration="7865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58474000" />
+    <option name="totallyTimeSpent" value="59020000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="536" y="1" width="1008" height="824" extended-state="0" />
+    <frame x="648" y="46" width="1008" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18037975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18037975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,7 +397,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26878613" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26878613" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32796487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -600,8 +614,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readit/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="213">
+          <caret line="161" column="38" selection-start-line="161" selection-start-column="38" selection-end-line="161" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readit/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#222#231#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
