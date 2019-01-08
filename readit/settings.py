@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # obtaining Django_mode variable so as to set debug mode
 DJANGO_MODE = os.getenv('DJANGO_MODE', "Production").lower().replace("'", '')
-
+print('Django mode='+DJANGO_MODE)
 
 
 # Quick-start development settings - unsuitable for production
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',  # white noise
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'books',                    # books app developed by us
@@ -62,12 +63,14 @@ if DJANGO_MODE == 'local':
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',          # debug toolbar middleware
     'django.middleware.security.SecurityMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
 ]
 
@@ -167,3 +170,6 @@ STATICFILES_DIRS = (
 
 #Auth
 LOGIN_URL = '/login/'
+
+# white noise static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
